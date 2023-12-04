@@ -1,1 +1,1 @@
-This is readme file of this repo.
+[![Coverage Status](https://coveralls.io/repos/github/cotesti/compse200/badge.svg?branch=main)](https://coveralls.io/github/cotesti/compse200?branch=main)
