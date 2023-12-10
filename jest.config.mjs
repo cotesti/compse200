@@ -1,9 +1,25 @@
+const filesUnderTest = [
+  "camelCase.js",
+  "ceil.js",
+  "filter.js",
+  "get.js",
+  "isLength.js",
+  "toNumber.js",
+  "toString.js",
+  "upperFirst.js",
+  "words.js",
+  "isDate.js",
+  "isEmpty.js"
+].map(file => `<rootDir>/COMP.SE.200-2023-2024-1-main/src/${file}`);
+
 export default {
   transform: {
     '^.+\\.js$': 'babel-jest',
   },
+  verbose: true,
   collectCoverageFrom: [
-    "<rootDir>/COMP.SE.200-2023-2024-1-main/**/*.js",
+    ...filesUnderTest,
     "!<rootDir>/COMP.SE.200-2023-2024-1-main/src/.internal/**"
   ],
 };
+
